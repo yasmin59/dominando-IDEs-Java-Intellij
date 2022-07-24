@@ -10,6 +10,34 @@ public class PrimeiroPrograma {
         Gato gato = new Gato();
         System.out.println(gato);
 
+        Livro livro = new Livro("O problema dos 3 corpos", 300);
+        System.out.println(livro);
     }
 
+}
+
+class Livro {
+    private String nome;
+    private Integer nPag;
+
+    public Livro(String nome, Integer nPag) {
+        this.nome = nome;
+        this.nPag = nPag;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public Integer getnPag() {
+        return nPag;
+    }
+
+    public void setnPag(Integer nPag) {
+        this.nPag = nPag;
+    }
 }
